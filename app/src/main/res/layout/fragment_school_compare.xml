@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/schoolCompare"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <Button
+            android:id="@+id/school_a"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/btn_circle_selectschool"
+            android:text="请输入院校"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/school_b"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_circle_selectschool"
+            android:text="请输入院校"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/kaishiduibi"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ic_rectangle_button"
+            android:text="开始对比"
+            android:textColor="@color/white" />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/schoolImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/schoolCompare"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/leftCompare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/schoolImage"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/fenshuxian_2019_a"
+                        android:layout_width="40dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:background="@drawable/border_text"
+                        android:gravity="center"
+                        android:text="2019"
+                        android:textSize="9sp" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_2019_fenshuxian_a"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:progress="90"
+                        android:layout_alignLeft="@id/fenshuxian_2019_a"
+                        android:layout_marginLeft="5dp"
+                        android:max="100" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fenshuxian_2018_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_fenshuxian_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/fenshuxian_2018_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/fenshuxian_2017_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_fenshuxian_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/fenshuxian_2017_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/baolubi_2019_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2019_baolubi_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2019_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/baolubi_2018_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_baolubi_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2018_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/baolubi_2017_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_baolubi_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2017_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tuimianbili_2019_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2019"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2019_tuimianbili_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2019_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/tuimianbili_2018_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_tuimianbili_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2018_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/tuimianbili_2017_a"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_tuimianbili_a"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2017_a"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d7d7d7"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fenshuxian_2019_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2019"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2019_fenshuxian_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/fenshuxian_2019_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/fenshuxian_2018_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_fenshuxian_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/fenshuxian_2018_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/fenshuxian_2017_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_fenshuxian_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/fenshuxian_2017_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/baolubi_2019_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2019_baolubi_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2019_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/baolubi_2018_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_baolubi_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2018_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/baolubi_2017_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_baolubi_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/baolubi_2017_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tuimianbili_2019_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2019"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2019_tuimianbili_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2019_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/tuimianbili_2018_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2018_tuimianbili_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2018_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/tuimianbili_2017_b"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_text"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textSize="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_2017_tuimianbili_b"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/tuimianbili_2017_b"
+                    android:layout_marginLeft="5dp"
+                    android:max="100" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
